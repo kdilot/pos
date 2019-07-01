@@ -5,7 +5,8 @@
 
 > Sample layout the POS system (Item list, Cart Add, Cart Remove, Market Price Info)
 
-`Demo site : `**`https://kdilot.github.io/pos/`**
+
+Demo site : **https://kdilot.github.io/pos/**
 
   
   
