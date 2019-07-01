@@ -1,7 +1,7 @@
 
 # *POS System*
 
-  
+
 
 > Sample layout the POS system (Item list, Cart Add, Cart Remove, Market Price Info)
 
