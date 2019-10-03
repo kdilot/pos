@@ -1,0 +1,41 @@
+@import "../defaultColor.scss";
+
+@mixin btn-style($padding, $minWidth, $minHeight) {
+  padding: 0 $padding;
+  min-width: $minWidth;
+  min-height: $minHeight;
+}
+[class*="btn"] {
+  background-color: $color4;
+  border: 1px;
+  font-size: 1rem;
+  color: $font;
+}
+[class*="btn"]:focus {
+  outline: none;
+}
+[class*="btn"]:hover {
+  background: $color1;
+}
+[class*="btn"]:active {
+  background: $color5;
+}
+.btn__rd {
+  border-radius: 15px;
+}
+.btn__sm {
+  font-size: 0.9rem;
+  @include btn-style(0.5rem, 2rem, 2rem);
+}
+.btn__md {
+  @include btn-style(0.7rem, 2.3rem, 2.3rem);
+}
+.btn__lg {
+  font-size: 1.1rem;
+  @include btn-style(1rem, 2.5rem, 2.5rem);
+}
+.btn__full {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
