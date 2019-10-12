@@ -1,0 +1,53 @@
+@import "../defaultColor.scss";
+
+.layout__wrapper {
+  height: 100vh;
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0.5rem;
+  .layout__side,
+  .layout__content {
+    border-collapse: collapse;
+    border: 0.1rem solid $color4;
+  }
+}
+.layout__content {
+  height: 100%;
+  grid-area: "content";
+}
+.layout__side {
+  height: 100%;
+  display: grid;
+  grid-area: "side";
+  grid-template-rows: 1fr 7fr 1fr;
+  .layout__side__title {
+    border-bottom: 0.1rem solid $color4;
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .layout__wrapper {
+    grid-template-columns: 3fr 1.3fr;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .layout__wrapper {
+    grid-template-columns: 3fr 1.8fr;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .layout__wrapper {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "content"
+      "side";
+  }
+}
+@media only screen and (max-width: 450px) {
+  .layout__wrapper {
+    padding: 0.5rem;
+  }
+}
